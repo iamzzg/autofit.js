@@ -1,7 +1,7 @@
 {
   "name": "@iamzzg/autofit.js",
-  "version": "3.1.0",
-  "description": "autofit.js 是迄今为止最易用的自适应工具",
+  "version": "3.1.1",
+  "description": "autofit.js 是迄今为止最易用的自适应工具,兼容 umd 格式,可以通过script标签引入",
   "main": "dist/autofit.js",
   "module": "dist/autofit.js",
   "types": "./index.d.ts",

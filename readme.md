@@ -10,17 +10,9 @@
 
 简体中文 | [English](./readme.en.md)
 
-### autofit.js
-
-迄今为止最易用的自适应工具
-
-理论上可以支持从你的设计稿以下的分辨率，只需一行代码。
-
-autofit.js 是一个可以让你的 PC 项目自适应屏幕的工具，其原理非常简单，即在 scale 等比缩放的基础上，向右或向下增加了宽度或高度，以达到充满全屏的效果，使用 autofit.js 不会挤压、拉伸元素，它只是单纯的设置了容器的宽高。
-
 ### fork 官方源码,增加 umd 打包方式,以便直接通过 script 标签引入使用
 
-由于作者明确回复不支持 umd 格式,所以只能自己动手增加多一个打包方式.打包文件在 dist 目录,`autofit.umd.js`文件
+作者明确回复不支持 umd 格式,所以只能自己动手增加多一个打包方式.打包文件在 dist 目录,`autofit.umd.js`文件
 
 umd 使用方式,copy 该文件,手动引入该`autofit.umd.js`,该 umd 命名空间打包的时候设置了为 Autofit,所以对照官网`esm`格式文档,默认导出挂在了 `Autofit.default`上,其他具名导出如`elRectification`挂在 `Autofit` 上
 
@@ -28,9 +20,17 @@ umd 使用方式,copy 该文件,手动引入该`autofit.umd.js`,该 umd 命名�
 <script src="autofit.umd.js"></script>
 <script>
   Autofit.default.init(); // 对照原文档,默认导出挂在Auto
-  Autofit.elRectification(); //
+  Autofit.elRectification(); // 具名导出
 </script>
 ```
+
+### autofit.js
+
+迄今为止最易用的自适应工具
+
+理论上可以支持从你的设计稿以下的分辨率，只需一行代码。
+
+autofit.js 是一个可以让你的 PC 项目自适应屏幕的工具，其原理非常简单，即在 scale 等比缩放的基础上，向右或向下增加了宽度或高度，以达到充满全屏的效果，使用 autofit.js 不会挤压、拉伸元素，它只是单纯的设置了容器的宽高。
 
 ### 引入
 
