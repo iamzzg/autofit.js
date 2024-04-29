@@ -1,17 +1,17 @@
 {
-  "name": "autofit.js",
+  "name": "@iamzzg/autofit.js",
   "version": "3.1.0",
   "description": "autofit.js 是迄今为止最易用的自适应工具",
-  "main": "autofit.js",
+  "main": "dist/autofit.js",
+  "module": "dist/autofit.js",
   "types": "./index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/995231030/autofit.js.git"
+    "url": "https://github.com/iamzzg/autofit.js.git"
   },
-  "homepage": "https://jshub.cn",
   "keywords": [
     "大屏",
     "自适应",
@@ -29,6 +29,10 @@
     "vue-fit",
     "autofit.js"
   ],
-  "author": "Larry Zhu",
-  "license": "MIT"
+  "author": "Dragon",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
 }
